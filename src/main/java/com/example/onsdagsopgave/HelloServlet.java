@@ -30,6 +30,10 @@ public class HelloServlet extends HttpServlet {
 //            out.println("<h1>" + message + "</h1>");
 //            out.println("</body></html>");
 
+            HttpSession session = request.getSession();
+
+            session.setAttribute("name", navn);
+
             String name = request.getParameter("name");
 
             request.setAttribute("name", name);
