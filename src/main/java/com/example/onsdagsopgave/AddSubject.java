@@ -28,10 +28,21 @@ public class AddSubject extends HttpServlet {
         if (emneListe == null)
         {
             emneListe = new ArrayList<>();
-            session.setAttribute("emneListe", emneListe);
         }
 
+        ServletContext servletContext = request.getServletContext();
+        List<String> alleEmner = (List<String>) servletContext.getAttribute("alleEmner");
+
+        if (alleEmner == null)
+        {
+            alleEmner = new ArrayList<>();
+        }
+
+        alleEmner.add(emne);
+
         emneListe.add(emne);
+
+        servletContext.setAttribute("alleEmner", alleEmner);
 
         session.setAttribute("emneListe", emneListe);
 

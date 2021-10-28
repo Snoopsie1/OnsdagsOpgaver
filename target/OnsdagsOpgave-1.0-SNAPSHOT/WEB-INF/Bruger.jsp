@@ -25,12 +25,18 @@
     <br>
     <input type="submit" value="Submit">
 </form>
+<form action="VisOversigt" , method="get">
+    <input type="submit" value="Gå til oversigt">
+</form>
 
 
 <c:forEach items="${sessionScope.emneListe}" var="emne">
     ${emne}
     <br>
 </c:forEach>
+
+
+
 
 </body>
 </html>
