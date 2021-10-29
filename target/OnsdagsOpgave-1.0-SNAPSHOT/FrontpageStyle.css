@@ -12,3 +12,8 @@
     margin: auto;
     text-align: center;
 }
+
+.warning
+{
+    color: #c56159;
+}

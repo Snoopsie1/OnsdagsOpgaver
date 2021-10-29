@@ -12,3 +12,13 @@
     margin: auto;
     text-align: center;
 }
+
+.warning
+{
+    color: #c56159;
+}
+
+.landingPage
+{
+    background-image: url("src/images/landingPage.jpeg");
+}

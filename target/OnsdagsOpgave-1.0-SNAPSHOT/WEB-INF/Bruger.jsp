@@ -11,6 +11,7 @@
 <html>
 <head>
     <title>Brugerside</title>
+    <link rel="stylesheet" href="FrontpageStyle.css">
 </head>
 <body>
 
@@ -25,6 +26,16 @@
     <br>
     <input type="submit" value="Submit">
 </form>
+<br>
+<div class="warning">${sessionScope.msg} </div>
+<form action="SletEmne" , method="post">
+    <label for="emne">Slet emne :</label><br>
+    <input type="text" id="sletemne" name="emne" value="">
+    <br>
+    <br>
+    <input type="submit" value="Slet">
+</form>
+
 <form action="VisOversigt" , method="get">
     <input type="submit" value="Gå til oversigt">
 </form>
